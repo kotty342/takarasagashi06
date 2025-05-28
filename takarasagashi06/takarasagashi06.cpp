@@ -48,10 +48,10 @@ int main() {
 
 // 関数1: 入力座標の妥当性判定
 int is_valid_position(int x, int y) {
-    if (x < 0 && x >= GRID_SIZE) {
+    if (x < 0 || x >= GRID_SIZE) {
         return 0;
     }
-    if (y < 0 && y >= GRID_SIZE) {
+    if (y < 0 || y >= GRID_SIZE) {
         return 0;
     }
     return 1;
